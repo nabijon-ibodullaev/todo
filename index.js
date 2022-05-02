@@ -7,7 +7,7 @@ const compression = require("compression");
 
 mongoose
   .connect(
-    "mongodb+srv://Nabijon:<password>@cluster0.k4czd.mongodb.net/myFirstDatabase?retryWrites=true",
+    "mongodb+srv://Nabijon:<password>@cluster0.k4czd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
