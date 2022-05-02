@@ -6,10 +6,13 @@ const helmet = require("helmet");
 const compression = require("compression");
 
 mongoose
-  .connect("mongodb://localhost:27017", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://Nabijon:<password>@cluster0.k4czd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("Mongodb is connected...");
   })
